@@ -1,0 +1,5 @@
+d=int(input("input d: "))
+N=int(input("input N: "))
+c=int(input("input chiffre: "))
+print("decoding...")
+print(pow(c,d)%N)
