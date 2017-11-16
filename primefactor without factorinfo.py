@@ -1,6 +1,6 @@
 import math
 import os
-clear = lambda: os.system('cls')
+clear = lambda: os.system('clear')
 def divisible(sus, div):
     return sus%div==0
 def checkprime(susp):
@@ -22,7 +22,7 @@ while True:
     isprime = bool(checkprime(factorize))
     output=str(factorize)
     if(not isprime):
-        while suspect<=factorize and not isprime:       
+        while suspect<=factorize and not isprime:
             if(checkprime(suspect)):
                 #temp=factorize
                 #clear()
@@ -34,7 +34,7 @@ while True:
                     #print(str(suspect));
                     factorize=factorize/suspect;
                     isprime = bool(checkprime(factorize))
-                    n+=1; 
+                    n+=1;
                     output=""
                     if not factorize/suspect==1:
                         for x in range(0,len(factors)):
@@ -49,7 +49,7 @@ while True:
                         if not int(factorize)==1:
                             output=output+str(int(factorize))
                         clear()
-                        print(str(temp)+"="+output); 
+                        print(str(temp)+"="+output);
             suspect+=1;
         #output="";
         #for x in range(0,len(factors)-1):
@@ -61,4 +61,3 @@ while True:
         clear()
         output=str(factorize);
         print(str(temp)+"="+output);
-        
